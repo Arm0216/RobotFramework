@@ -17,13 +17,9 @@ jobs:
             source advanced-algorithms/bin/activate
             pip install --upgrade pip
             pip install pytest-cov
+            pip install
 
       - run:
           name: Perform Unit Tests
           command: |
-            export PYTHONPATH=$PWD
-            pytest -v
-            coverage report -m
-            coverage xml
-            bash <(curl -s https://codecov.io/bash) -f tests/coverage/coverage.xml
             robot testCases/firstTest.robot
