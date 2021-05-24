@@ -7,7 +7,7 @@ Variables  ./variables.py
 
 *** Test Cases ***
 searchTest
-   browser open     ${url}  ${browser}
+   Open Browser   ${url}   ${browser}
    input text    ${text}   Python robot
    click button   ${searchButton}
    click link   ${video}
