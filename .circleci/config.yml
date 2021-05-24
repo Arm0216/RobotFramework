@@ -19,6 +19,7 @@ jobs:
             pip install pytest-cov
             pip install selenium
             pip install robotframework
+            pip install robotframework-seleniumlibrary
 
       - run:
           name: Perform Unit Tests
