@@ -12,10 +12,3 @@ searchTest
    click button   ${searchButton}
    click link   ${video}
    close browser
-search
-   open browser     ${url}     ${browser}
-   input text    ${text}   Python robotframework
-   click button   ${searchButton}
-   click link   ${video}
-   close browser
-

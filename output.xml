@@ -1,103 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.2 (Python 3.8.5 on linux)" generated="20210524 14:16:20.977" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.2 (Python 3.8.5 on linux)" generated="20210524 14:26:35.222" rpa="false" schemaversion="2">
 <suite id="s1" name="firstTest" source="/home/user/PycharmProjects/pythonProject1/testCases/firstTest.robot">
 <test id="s1-t1" name="searchTest">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210524 14:16:21.077" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
-<status status="PASS" starttime="20210524 14:16:21.077" endtime="20210524 14:16:25.440"/>
+<msg timestamp="20210524 14:26:35.342" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<status status="PASS" starttime="20210524 14:26:35.342" endtime="20210524 14:26:40.012"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${text}</arg>
 <arg>Python robot</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210524 14:16:25.441" level="INFO">Typing text 'Python robot' into text field 'xpath:/html/body/ytd-app/div/div/ytd-masthead/div[3]/div[2]/ytd-searchbox/form/div/div[1]/input'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210524 14:16:25.449" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=90.0.4430.85)
-</msg>
-<status status="FAIL" starttime="20210524 14:16:25.444" endtime="20210524 14:16:25.449"/>
-</kw>
-<msg timestamp="20210524 14:16:25.449" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=90.0.4430.85)
-</msg>
-<msg timestamp="20210524 14:16:25.450" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=90.0.4430.85)
-</msg>
-<status status="FAIL" starttime="20210524 14:16:25.441" endtime="20210524 14:16:25.450"/>
+<msg timestamp="20210524 14:26:40.013" level="INFO">Typing text 'Python robot' into text field 'xpath:/html/body/ytd-app/div/div/ytd-masthead/div[3]/div[2]/ytd-searchbox/form/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20210524 14:26:40.012" endtime="20210524 14:26:40.243"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${searchButton}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210524 14:16:25.451" endtime="20210524 14:16:25.451"/>
+<msg timestamp="20210524 14:26:40.244" level="INFO">Clicking button 'css:button#search-icon-legacy'.</msg>
+<status status="PASS" starttime="20210524 14:26:40.243" endtime="20210524 14:26:40.394"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${video}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210524 14:16:25.451" endtime="20210524 14:16:25.451"/>
+<msg timestamp="20210524 14:26:40.395" level="INFO">Clicking link 'xpath://div[3]/ytd-video-renderer[1]/div[1]/ytd-thumbnail/a'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210524 14:26:40.663" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210524 14:26:40.409" endtime="20210524 14:26:40.663"/>
+</kw>
+<msg timestamp="20210524 14:26:40.664" level="FAIL">Link with locator 'xpath://div[3]/ytd-video-renderer[1]/div[1]/ytd-thumbnail/a' not found.</msg>
+<status status="FAIL" starttime="20210524 14:26:40.394" endtime="20210524 14:26:40.664"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20210524 14:16:25.452" endtime="20210524 14:16:25.452"/>
+<status status="NOT RUN" starttime="20210524 14:26:40.665" endtime="20210524 14:26:40.665"/>
 </kw>
-<status status="FAIL" starttime="20210524 14:16:21.076" endtime="20210524 14:16:25.453">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=90.0.4430.85)
-</status>
+<status status="FAIL" starttime="20210524 14:26:35.341" endtime="20210524 14:26:40.665">Link with locator 'xpath://div[3]/ytd-video-renderer[1]/div[1]/ytd-thumbnail/a' not found.</status>
 </test>
 <test id="s1-t2" name="search">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210524 14:16:25.455" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
-<status status="PASS" starttime="20210524 14:16:25.455" endtime="20210524 14:16:28.990"/>
+<msg timestamp="20210524 14:26:40.666" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<status status="PASS" starttime="20210524 14:26:40.666" endtime="20210524 14:26:43.559"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${text}</arg>
 <arg>Python robotframework</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210524 14:16:28.991" level="INFO">Typing text 'Python robotframework' into text field 'xpath:/html/body/ytd-app/div/div/ytd-masthead/div[3]/div[2]/ytd-searchbox/form/div/div[1]/input'.</msg>
+<msg timestamp="20210524 14:26:43.562" level="INFO">Typing text 'Python robotframework' into text field 'xpath:/html/body/ytd-app/div/div/ytd-masthead/div[3]/div[2]/ytd-searchbox/form/div/div[1]/input'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210524 14:16:29.011" level="FAIL">WebDriverException: Message: chrome not reachable
+<msg timestamp="20210524 14:26:43.572" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=90.0.4430.85)
 </msg>
-<status status="FAIL" starttime="20210524 14:16:29.007" endtime="20210524 14:16:29.011"/>
+<status status="FAIL" starttime="20210524 14:26:43.568" endtime="20210524 14:26:43.572"/>
 </kw>
-<msg timestamp="20210524 14:16:29.011" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+<msg timestamp="20210524 14:26:43.572" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=90.0.4430.85)
 </msg>
-<msg timestamp="20210524 14:16:29.013" level="FAIL">NoSuchWindowException: Message: no such window: window was already closed
+<msg timestamp="20210524 14:26:43.574" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=90.0.4430.85)
 </msg>
-<status status="FAIL" starttime="20210524 14:16:28.991" endtime="20210524 14:16:29.013"/>
+<status status="FAIL" starttime="20210524 14:26:43.560" endtime="20210524 14:26:43.574"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${searchButton}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210524 14:16:29.013" endtime="20210524 14:16:29.013"/>
+<status status="NOT RUN" starttime="20210524 14:26:43.575" endtime="20210524 14:26:43.575"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${video}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210524 14:16:29.014" endtime="20210524 14:16:29.014"/>
+<status status="NOT RUN" starttime="20210524 14:26:43.576" endtime="20210524 14:26:43.576"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20210524 14:16:29.014" endtime="20210524 14:16:29.014"/>
+<status status="NOT RUN" starttime="20210524 14:26:43.576" endtime="20210524 14:26:43.577"/>
 </kw>
-<status status="FAIL" starttime="20210524 14:16:25.454" endtime="20210524 14:16:29.015">NoSuchWindowException: Message: no such window: window was already closed
+<status status="FAIL" starttime="20210524 14:26:40.665" endtime="20210524 14:26:43.577">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=90.0.4430.85)
 </status>
 </test>
-<status status="FAIL" starttime="20210524 14:16:20.978" endtime="20210524 14:16:29.017"/>
+<status status="FAIL" starttime="20210524 14:26:35.223" endtime="20210524 14:26:43.580"/>
 </suite>
 <statistics>
 <total>
@@ -110,11 +103,8 @@ from unknown error: web view not found
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20210524 14:16:25.449" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+<msg timestamp="20210524 14:26:43.572" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=90.0.4430.85)
-</msg>
-<msg timestamp="20210524 14:16:29.011" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
   (Session info: chrome=90.0.4430.85)
 </msg>
 </errors>
