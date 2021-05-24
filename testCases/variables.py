@@ -1,0 +1,5 @@
+url = "https://www.youtube.com/"
+browser = "chrome"
+video = "xpath://div[3]/ytd-video-renderer[1]/div[1]/ytd-thumbnail/a"
+text = "xpath:/html/body/ytd-app/div/div/ytd-masthead/div[3]/div[2]/ytd-searchbox/form/div/div[1]/input"
+searchButton = "css:button#search-icon-legacy"
