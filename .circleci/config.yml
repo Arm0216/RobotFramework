@@ -13,13 +13,10 @@ jobs:
           name: Build Environment
           command: |
             python --version
-            python -m venv advanced-algorithms
-            source advanced-algorithms/bin/activate
             pip install --upgrade pip
-            pip install pytest-cov
             pip install selenium
             sudo pip3 install robotframework
-            pip install robotframework-seleniumlibrary
+            sudo pip3 install robotframework-seleniumlibrary
 
       - run:
           name: Perform Unit Tests
