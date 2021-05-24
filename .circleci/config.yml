@@ -21,4 +21,4 @@ jobs:
       - run:
           name: Perform Unit Tests
           command: |
-            python -m robot testCases/firstTest.robot
+            robot testCases/firstTest.robot
