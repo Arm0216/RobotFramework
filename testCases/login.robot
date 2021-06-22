@@ -3,6 +3,8 @@
 Library  SeleniumLibrary
 Resource  page/loginPage.robot
 Resource  ../verifications/login.verify.robot
+Test Setup  Oepn My Browser  ${url}  ${browser}
+Test Teardown   Close Browser
 
 
 *** Variables ***
@@ -17,4 +19,10 @@ Login With Correct Email and Password
    Oepn My Browser  ${url}  ${browser}
    Login    ${username}    ${pass}
    Verify Seccessfull Login
-   close browser
+
+Change Password With Forget Password
+    Click on Forgot Password
+    Verify Seccessfull Open Forgot Passowrd Page
+    Fiel in email      ${username}
+    Click On Reset Button
+    Verify Seccess message
