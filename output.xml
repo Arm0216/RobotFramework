@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.2 (Python 3.8.5 on linux)" generated="20210623 14:26:05.662" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.2 (Python 3.8.5 on linux)" generated="20210623 19:03:58.001" rpa="false" schemaversion="2">
 <suite id="s1" name="floorPlan" source="/home/user/PycharmProjects/pythonProject1/testCases/floorPlan.robot">
 <test id="s1-t1" name="Navigate To The Floot Page">
 <kw name="Oepn My Browser" library="loginPage" type="SETUP">
@@ -9,14 +9,14 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210623 14:26:05.792" level="INFO">Opening browser 'Chrome' to base url 'https://dev-restaurants.summerize.io'.</msg>
-<status status="PASS" starttime="20210623 14:26:05.791" endtime="20210623 14:26:13.758"/>
+<msg timestamp="20210623 19:03:58.104" level="INFO">Opening browser 'Chrome' to base url 'https://dev-restaurants.summerize.io'.</msg>
+<status status="PASS" starttime="20210623 19:03:58.103" endtime="20210623 19:04:01.741"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210623 14:26:13.759" endtime="20210623 14:26:13.866"/>
+<status status="PASS" starttime="20210623 19:04:01.742" endtime="20210623 19:04:01.848"/>
 </kw>
-<status status="PASS" starttime="20210623 14:26:05.791" endtime="20210623 14:26:13.866"/>
+<status status="PASS" starttime="20210623 19:03:58.103" endtime="20210623 19:04:01.849"/>
 </kw>
 <kw name="Login" library="loginPage">
 <arg>${username}</arg>
@@ -25,90 +25,117 @@
 <arg>${email}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210623 14:26:13.869" level="INFO">Typing text 'jeck@gmail.com' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20210623 14:26:13.868" endtime="20210623 14:26:13.997"/>
+<msg timestamp="20210623 19:04:01.851" level="INFO">Typing text 'jeck@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20210623 19:04:01.850" endtime="20210623 19:04:01.945"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${password}</arg>
 <arg>${pass}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210623 14:26:13.999" level="INFO">Typing text '123456789' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20210623 14:26:13.998" endtime="20210623 14:26:14.099"/>
+<msg timestamp="20210623 19:04:01.945" level="INFO">Typing text '123456789' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20210623 19:04:01.945" endtime="20210623 19:04:02.013"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${buttonLogin}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210623 14:26:14.100" level="INFO">Clicking button 'id:login-btn'.</msg>
-<status status="PASS" starttime="20210623 14:26:14.100" endtime="20210623 14:26:21.264"/>
+<msg timestamp="20210623 19:04:02.013" level="INFO">Clicking button 'id:login-btn'.</msg>
+<status status="PASS" starttime="20210623 19:04:02.013" endtime="20210623 19:04:06.064"/>
 </kw>
-<status status="PASS" starttime="20210623 14:26:13.867" endtime="20210623 14:26:21.264"/>
+<status status="PASS" starttime="20210623 19:04:01.849" endtime="20210623 19:04:06.065"/>
 </kw>
 <kw name="Click On Hamburger Menu" library="floorPlan.page">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${hamburgerMenu}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210623 14:26:21.266" level="INFO">Clicking element 'css:.dash-menu'.</msg>
-<status status="PASS" starttime="20210623 14:26:21.265" endtime="20210623 14:26:21.333"/>
+<msg timestamp="20210623 19:04:06.066" level="INFO">Clicking element 'css:.dash-menu'.</msg>
+<status status="PASS" starttime="20210623 19:04:06.065" endtime="20210623 19:04:06.110"/>
 </kw>
-<status status="PASS" starttime="20210623 14:26:21.264" endtime="20210623 14:26:21.334"/>
+<status status="PASS" starttime="20210623 19:04:06.065" endtime="20210623 19:04:06.111"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css:.span-logo-re</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210623 14:26:21.334" endtime="20210623 14:26:21.878"/>
+<status status="PASS" starttime="20210623 19:04:06.111" endtime="20210623 19:04:06.578"/>
 </kw>
 <kw name="Scroll Down Left Menu" library="floorPlan.page">
 <arg>${settingsButton}</arg>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${scrollElem}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20210623 14:26:21.880" endtime="20210623 14:26:22.167"/>
+<status status="PASS" starttime="20210623 19:04:06.578" endtime="20210623 19:04:06.856"/>
 </kw>
-<status status="PASS" starttime="20210623 14:26:21.878" endtime="20210623 14:26:22.168"/>
+<status status="PASS" starttime="20210623 19:04:06.578" endtime="20210623 19:04:06.857"/>
 </kw>
 <kw name="Open Settings List" library="floorPlan.page">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${settingsButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210623 14:26:22.170" level="INFO">Clicking element 'css:.drop-li'.</msg>
-<status status="PASS" starttime="20210623 14:26:22.169" endtime="20210623 14:26:22.245"/>
+<msg timestamp="20210623 19:04:06.858" level="INFO">Clicking element 'css:.drop-li'.</msg>
+<status status="PASS" starttime="20210623 19:04:06.858" endtime="20210623 19:04:06.908"/>
 </kw>
-<status status="PASS" starttime="20210623 14:26:22.168" endtime="20210623 14:26:22.245"/>
+<status status="PASS" starttime="20210623 19:04:06.857" endtime="20210623 19:04:06.908"/>
 </kw>
 <kw name="Scroll Down Left Menu" library="floorPlan.page">
 <arg>${newReservation}</arg>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${scrollElem}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20210623 14:26:22.247" endtime="20210623 14:26:22.536"/>
+<status status="PASS" starttime="20210623 19:04:06.909" endtime="20210623 19:04:07.191"/>
 </kw>
-<status status="PASS" starttime="20210623 14:26:22.246" endtime="20210623 14:26:22.537"/>
+<status status="PASS" starttime="20210623 19:04:06.908" endtime="20210623 19:04:07.192"/>
 </kw>
 <kw name="Open Floor Plan Page" library="floorPlan.page">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${settingsList}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210623 14:26:22.538" level="INFO">Clicking element 'css:.active'.</msg>
-<status status="PASS" starttime="20210623 14:26:22.538" endtime="20210623 14:26:27.584"/>
+<msg timestamp="20210623 19:04:07.193" level="INFO">Clicking element 'css:.active'.</msg>
+<status status="PASS" starttime="20210623 19:04:07.193" endtime="20210623 19:04:09.780"/>
 </kw>
-<status status="PASS" starttime="20210623 14:26:22.537" endtime="20210623 14:26:27.585"/>
+<status status="PASS" starttime="20210623 19:04:07.192" endtime="20210623 19:04:09.780"/>
 </kw>
 <kw name="Verify Success Open The Floor Plan Page" library="floorPlan.verify">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Floor Plan - Life</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20210623 14:26:27.591" level="INFO">Page title is 'Floor Plan - Life'.</msg>
-<status status="PASS" starttime="20210623 14:26:27.586" endtime="20210623 14:26:27.592"/>
+<msg timestamp="20210623 19:04:09.784" level="INFO">Page title is 'Floor Plan - Life'.</msg>
+<status status="PASS" starttime="20210623 19:04:09.781" endtime="20210623 19:04:09.784"/>
 </kw>
-<status status="PASS" starttime="20210623 14:26:27.585" endtime="20210623 14:26:27.592"/>
+<status status="PASS" starttime="20210623 19:04:09.780" endtime="20210623 19:04:09.785"/>
+</kw>
+<kw name="Drag And Drop Table to the Table Dropable Area" library="floorPlan.page">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>var element=document.querySelector('[class="info-tb-se"]');</arg>
+<arg>element.remove();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20210623 19:04:09.786" level="INFO">Executing JavaScript:
+var element=document.querySelector('[class="info-tb-se"]');element.remove();
+Without any arguments.</msg>
+<status status="PASS" starttime="20210623 19:04:09.785" endtime="20210623 19:04:09.791"/>
+</kw>
+<kw name="Drag And Drop" library="SeleniumLibrary">
+<arg>xpath:/html/body/section/div/div[1]/div/div[1]/div/div/div/div[1]/div/div[1]/img</arg>
+<arg>${tableArea}</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" starttime="20210623 19:04:09.791" endtime="20210623 19:04:10.788"/>
+</kw>
+<status status="PASS" starttime="20210623 19:04:09.785" endtime="20210623 19:04:10.789"/>
+</kw>
+<kw name="Verify Success Drag And Drop The Table" library="floorPlan.verify">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${createTableNumberWindow}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20210623 19:04:10.800" level="INFO">Current page contains element 'css:[class="create-table-name"]'.</msg>
+<status status="PASS" starttime="20210623 19:04:10.790" endtime="20210623 19:04:10.800"/>
+</kw>
+<status status="PASS" starttime="20210623 19:04:10.789" endtime="20210623 19:04:10.800"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210623 14:26:27.593" endtime="20210623 14:26:27.656"/>
+<status status="PASS" starttime="20210623 19:04:10.800" endtime="20210623 19:04:10.861"/>
 </kw>
-<status status="PASS" starttime="20210623 14:26:05.790" endtime="20210623 14:26:27.657"/>
+<status status="PASS" starttime="20210623 19:03:58.102" endtime="20210623 19:04:10.862"/>
 </test>
-<status status="PASS" starttime="20210623 14:26:05.663" endtime="20210623 14:26:27.658"/>
+<status status="PASS" starttime="20210623 19:03:58.002" endtime="20210623 19:04:10.862"/>
 </suite>
 <statistics>
 <total>

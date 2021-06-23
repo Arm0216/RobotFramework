@@ -25,3 +25,5 @@ Navigate To The Floot Page
     Scroll Down Left Menu     ${newReservation}
     Open Floor Plan Page
     Verify Success Open The Floor Plan Page
+    Drag And Drop Table to the Table Dropable Area
+    Verify Success Drag And Drop The Table
