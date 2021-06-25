@@ -9,6 +9,8 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  commit_comment:
+    branches: [ master ]
     
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -24,7 +26,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+      - name: Run a one-line script
+        run: pip install robotframework-seleniumlibrary
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: robot testCases/floorPlan.robot
