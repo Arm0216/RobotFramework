@@ -2,6 +2,10 @@
 Library  SeleniumLibrary
 Variables  loginPage.py
 
+*** Variables ***
+${url}         https://dev-restaurants.summerize.io
+${browser}     Chrome
+
 *** Keywords ***
 Oepn My Browser
     [Arguments]  ${url}     ${browser}
@@ -9,6 +13,7 @@ Oepn My Browser
     Maximize browser window
 Login
     [Arguments]  ${username}   ${pass}
+    Oepn My Browser     ${url}      ${browser}
     input text   ${email}       ${username}
     input text   ${password}    ${pass}
     click button   ${buttonLogin}

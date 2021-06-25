@@ -2,9 +2,6 @@
 Library  SeleniumLibrary
 Variables  ../testCases/page/floorPlanPage.py
 
-*** Variables ***
-
-
 
 *** Keywords ***
 Verify Success Open The Floor Plan Page
@@ -12,3 +9,9 @@ Verify Success Open The Floor Plan Page
 
 Verify Success Drag And Drop The Table
     Page Should Contain Element      ${createTableNumberWindow}
+
+Verify Success Add New Table
+    Page Should Contain Element      ${dragTable}
+
+Veify Success Message Is Shown
+    Page Should Contain Element      ${successMessageContainer}
