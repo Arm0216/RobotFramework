@@ -25,6 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Execute tests
+        uses: joonvena/robotframework-docker-action@v0.1
         env:
           BROWSER: chrome
           ROBOT_TESTS_DIR: ${{ github.workspace }}/robot_tests
