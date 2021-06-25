@@ -11,7 +11,7 @@ Verify Success Drag And Drop The Table
     Page Should Contain Element      ${createTableNumberWindow}
 
 Verify Success Add New Table
-    Page Should Contain Element      ${dragTable}
+    Page Should Contain Element         ${dragTable}
 
 Veify Success Message Is Shown
     Page Should Contain Element      ${successMessageContainer}
