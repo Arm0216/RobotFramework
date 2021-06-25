@@ -28,8 +28,6 @@ jobs:
         uses: joonvena/robotframework-docker-action@v0.1
         env:
           BROWSER: chrome
-          ROBOT_TESTS_DIR: ${{ github.workspace }}/log
-          ROBOT_REPORTS_DIR: ${{ github.workspace }}/reports
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: robot testCases/floorPlan.robot
