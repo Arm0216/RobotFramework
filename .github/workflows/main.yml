@@ -27,5 +27,6 @@ jobs:
       - name: Execute tests
         env:
           BROWSER: chrome
-          run: robot testCases/floorPlan.robot
+      - name: run test
+        run: robot testCases/floorPlan.robot
         
